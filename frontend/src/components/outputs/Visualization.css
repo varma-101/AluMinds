@@ -1,0 +1,17 @@
+.visualization-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle {
+    text-align: center;
+    width: 120px;
+  }
+  .circle p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  

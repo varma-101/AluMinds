@@ -1,0 +1,126 @@
+/* Main container for all rows */
+.parameters-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  
+  flex-wrap: wrap;
+}
+
+/* Card wrapping all parameters */
+.parameters-card {
+  flex: 4;
+  background-color: #fff;
+  border-radius: 12px;
+  
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* More visible shadow */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card wrapping all compositions */
+.compositions-card {
+  flex: 0.9;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* More visible shadow */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each row containing parameters and compositions */
+.parameter-composition-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Parameters section (5 in a row for first row, equal sizing for all rows) */
+.parameters-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 5 in first row */
+  gap: 15px;
+  
+}
+
+.parameters-section:nth-child(2) {
+  grid-template-columns: repeat(4, 1.25fr); /* 5 in second row to keep equal */
+}
+
+.parameters-section:nth-child(3) {
+  grid-template-columns: repeat(4, 1.25fr); /* 5 in third row to keep equal */
+}
+
+/* Compositions section (1 in a row for each row) */
+.compositions-section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+}
+
+/* Parameter card styling */
+.parameter-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #faefef;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Slightly increased shadow */
+  padding: 10px;
+  height: 80px;
+  text-align: center;
+}
+
+.parameter-card img{
+  height: 33px;
+  width: 30px;
+}
+
+.parameter-value {
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+.parameter-label {
+  font-size: 12px;
+  color: #666;
+  padding-top: 5px;
+}
+
+/* Composition card styling */
+.composition-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  height: 80px;
+  background: #fff;
+  border: 2px solid;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Slightly increased shadow */
+}
+
+.composition-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.composition-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+}

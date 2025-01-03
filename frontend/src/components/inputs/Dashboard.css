@@ -1,0 +1,87 @@
+.actions .predict-btn,
+.actions .optimize-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 160px;
+    font-size: 25px;
+}
+
+.actions .predict-btn {
+    background-color: #f12828;
+    color: white;
+}
+
+.actions .optimize-btn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.actions .predict-btn:hover,
+.actions .optimize-btn:hover {
+    opacity: 0.8;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-grid label {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #9f1f1f;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.dashboard-row {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Space between components */
+    padding: 20px; /* Add padding if needed */
+}
+
+.form-error {
+    color: red;
+    font-size: 14px; /* Optional, adjust as needed */
+    margin-top: 5px; /* Optional, for spacing */
+  }
+.other-content{
+    background-color: #faefef;
+}

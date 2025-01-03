@@ -1,0 +1,79 @@
+.sidebar {
+    height: 83.5vh;
+    width: 15.75%;
+    background-color: #901b1b;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-right: 0px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-left: 15px;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    font-size: 1.5rem; /* Larger text size */
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    opacity: 0.8;
+}
+
+.sidebar li svg {
+    margin-right: 25px; /* Increased space between icon and text */
+    font-size: 4rem; /* Larger icon size */
+    color: white;
+}
+
+.sidebar .logout {
+    margin-top: 15rem;
+    padding-bottom: 10px; /* Push Logout to the bottom */
+    width: 100%;
+    text-align: center;
+}
+
+
+
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+    padding: 10px 0px 20px 5px; /* Add vertical space between items */
+  }
+  
+  .sidebar-link {
+    text-decoration: none;
+    color: rgb(252, 250, 250); /* Default text color */
+    font-size: 19px; /* Default text size */
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    transition: color 0.3s, font-size 0.3s; /* Smooth hover transition */
+  }
+  
+  .sidebar-link .icon {
+    margin-right: 10px; /* Add space between icon and text */
+    font-size: 22px; /* Adjust icon size */
+  }
+  
+  .sidebar-link:hover {
+    color: rgb(19, 19, 19); /* Change text color on hover */
+    font-size: 18px; /* Increase text size on hover */
+  }
+  

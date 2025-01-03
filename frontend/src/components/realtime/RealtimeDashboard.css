@@ -1,0 +1,508 @@
+/* General Layout */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #FDF8F8;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.realtime-content {
+  flex: 1;
+  padding: 5px;
+  background-color: #FDF8F8;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Metrics Grid */
+.metrics-section h2 {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 15px;
+  text-align: center;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 15px;
+}
+
+.metrics-group {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.metrics-group h2 {
+  color : #610202;
+}
+
+.metric-card {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  justify-content: space-between; /* Ensure equal spacing between elements */
+  background: #fffafa;
+  margin: 10px;
+  height: 60px;
+  padding: 10px 15px; /* Adjust padding for better spacing */
+  border-radius: 5px; /* Optional: round the corners */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: slight shadow for better distinction */
+}
+
+.roll:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  padding-left: -100px;
+}
+
+.metric-icon {
+  color: #901b1b;
+  font-size: 1.5rem;
+  margin-right: 10px; /* Add space between icon and text */
+}
+
+.metric-text {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column; /* Arrange label and value vertically */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Align text to the left */
+}
+
+/* Metric Container */
+.metric-container {
+  display: grid;
+  place-items: center; /* Center both vertically and horizontally */
+  text-align: center; /* Ensures text is centered */
+  height: 100%; /* Ensures it takes full height available */
+}
+
+/* Metric Label */
+.metric-label {
+  font-size: 1rem;
+  color: #0c0a0a;
+  font-weight: 500;
+  line-height: 23px;
+  margin: 0; /* Remove margin */
+  padding-left: 5px; /* Remove padding */
+}
+
+/* Metric Value */
+.metric-value {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.2;
+  margin: 0; /* Remove margin */
+  padding-left: 5px; /* Remove padding */
+}
+
+.view-alerts-btn{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 2rem;
+}
+
+
+/* Feedback Section */
+.feedbackoutput-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.feedback-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.feedback-section h3 {
+  font-size: 1.25rem;
+  color: #610202;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.feedback-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+.feedback-section li {
+  margin-bottom: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.feedback-section li strong {
+  color: #333;
+  font-weight: bold;  /* Ensure the text is bold */
+  font-size: 1.1rem;   /* Adjust font size */
+  font-style: normal;  /* Ensure the text is not italicized */
+  font-family: 'Arial Black', Arial, sans-serif; /* Use Arial Black font */
+}
+
+
+
+
+.feedback-section .error-value {
+  color: #901b1b;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.feedback-section .view-alerts-btn {
+  background-color: #901b1b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: opacity 0.3s;
+}
+
+.feedback-section .view-alerts-btn:hover {
+  opacity: 0.8;
+}
+
+.output-section {
+  margin: 0px auto;
+  margin-left: 200px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+}
+
+.output-section h3 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+.input-group input {
+  padding: 8px 12px;
+  margin-left: 10px;
+  width: 70%;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Modal Design */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+button {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Controller Section */
+.controler-card {
+  display: flex;
+  justify-content: space-evenly;
+  background: #f9f6f6;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  margin: 10px;
+  height: 300px;
+  text-align: center;
+  
+}
+.radio-wrapper {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  padding-top: 25px;
+  margin-top: 50px;
+}
+
+.radio-input {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  padding-bottom: 20px;
+}
+
+.glass {
+  z-index: 2;
+  height: 90%;
+  width: 70px;
+  margin-right: 20px;
+  padding: 5px;
+  background-color: rgba(128, 0, 0, 0.5); /* Maroon glass effect */
+  border-radius: 25px;
+  box-shadow: rgba(128, 0, 0, 0.2) 0px 20px 40px -10px,
+    rgba(0, 0, 0, 0.25) 0px 8px 25px -10px,
+    rgba(64, 0, 0, 0.26) 0px -1px 5px 0px inset;
+}
+
+.glass-inner {
+  width: 100%;
+  height: 100%;
+  border-color: rgba(255, 228, 225, 0.45); /* Light maroon tint */
+  border-width: 7px;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.choice > div {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  z-index: 0;
+}
+
+.choice-circle {
+  appearance: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(185, 166, 244, 0.45); /* Light maroon tint */
+  cursor: pointer;
+  box-shadow: 0px 0px 15px -10px rgba(128, 0, 0, 0.5),
+    0px 0px 15px -11px rgba(128, 0, 0, 0.4) inset;
+}
+
+.ball {
+  z-index: 1;
+  position: absolute;
+  inset: 0px;
+  transform: translateX(-75px);
+  box-shadow: rgba(128, 0, 0, 0.2) 0px -8px 8px 0px inset,
+    rgba(128, 0, 0, 0.15) 0px -30px 15px 0px inset,
+    rgba(128, 0, 0, 0.1) 0px 2px 1px, rgba(128, 0, 0, 0.1) 0px 4px 2px,
+    rgba(128, 0, 0, 0.1) 0px 8px 4px, rgba(128, 0, 0, 0.1) 0px 16px 8px;
+  border-radius: 100%;
+  transition: transform 800ms cubic-bezier(1, -0.4, 0, 1.4);
+  background-color: rgb(165, 42, 42); /* Maroon base */
+}
+
+.choice-circle:checked + .ball {
+  transform: translateX(0px);
+}
+
+.choice-name {
+  color: rgb(139, 0, 0); /* Dark maroon */
+  font-size: 25px;
+  font-weight: 700;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+hr {
+  margin: 3px 15px;
+  border-color: rgba(139, 0, 0, 0.5); /* Maroon line */
+}
+
+* Modal overlay and modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for the list */
+.modal ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+.modal li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Styling for the key (strong) element */
+.modal li strong {
+  font-family: 'Arial', sans-serif; /* Ensure it's in Arial */
+  color: #151515; /* Arial Blue color */
+  font-weight: 900;
+}
+
+/* Styling for fluctuation value */
+.error-value {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: rgb(111, 2, 2); /* Red color for fluctuation values */
+}
+
+/* Button styling */
+button {
+  background-color: #901b1b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.Interval{
+  background-color: #faefef;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 60%;
+}
+.card1{
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin:20px;
+  width: 95%;
+  display: flex;
+}

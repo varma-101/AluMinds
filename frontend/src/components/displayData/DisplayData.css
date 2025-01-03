@@ -1,0 +1,312 @@
+h3 {
+  margin-top: -20px;
+  color: #842020;; /* Moves the header 20px upwards */
+}
+
+/* Top Section Styles */
+.top-section {
+    height: 325px;
+    width: 78vw;
+    display: grid;
+    grid-template-rows: repeat(2,1fr); /* Two equal columns for left and right */
+    gap: 20px;
+    max-width: 100px; /* Limit width to 1000px */
+  }
+  
+  .left-right{
+    padding-left: 40px;
+    display: flex;
+    
+  }
+  
+  .left {
+    display: grid;
+    grid-template-rows: 2.75fr 1.25fr;
+  }
+  
+  .grades {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px; /* Adds space between grade cards */
+  }
+  
+  .grade-container {
+    background-color: #f3f3f3; /* Neutral background for container */
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .we-10 {
+    background-color: #eac0d5; /* Specific color for WE-10 */
+  }
+  
+  .we-20 {
+    background-color: #e3b4b4; /* Specific color for WE-20 */
+  }
+  
+  .icon img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px; /* Space between icon and count */
+  }
+  
+  .count p {
+    margin: 0;
+    font-size: 1.75rem; /* Larger font size for count */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .grade-btn {
+    background-color: #000000; /* Blue background for visibility */
+    border: 2px solid #000000; /* Darker blue border for definition */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 16px; /* Increased padding for better clickability */
+    border-radius: 8px; /* Slightly larger border radius */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .grade-btn:hover {
+    color: #ffffff;
+    background-color: #1c2f3b; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight enlargement for hover */
+    box-shadow: 0 4px 8px rgba(95, 79, 79, 0.2); /* Subtle shadow on hover for depth */
+  }
+  
+  
+  
+  .buttons
+  {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .predict-btn {
+    border: 4px solid #06612C; /* Default green border */
+    border-radius: 13px;
+    height: 60px;
+    width: 250px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-top: 15px;
+    position: relative;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin-top: -12px;
+  }
+  
+  /* Hover effect with black border, background color change, and other effects */
+  .predict-btn:hover {
+    
+    transform: scale(1.05); /* Slight scale for a "pop" effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border: 4px solid black; /* Change border color to black on hover */
+  }
+  
+  /* "Trending" hover effect: add underline and increase font size slightly */
+  .predict-btn:hover span {
+    
+    font-size: 1.35rem; /* Slight increase in font size for emphasis */
+  }
+  
+  .predict-btn span {
+    padding-left: 10px;
+    font-size: 1.25rem;
+    transition: all 0.3s ease; /* Smooth transition for span text */
+  }
+  
+  
+  .predict-btn span{
+    padding-left: 10px;
+    font-size: 1.25rem;
+  }
+  
+  
+  
+  .optimize-btn {
+    border: 4px solid #610202; /* Default red border */
+    border-radius: 13px;
+    height: 60px;
+    width: 250px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-top: 15px;
+    position: relative;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin-top: -12px;
+  }
+  
+  /* Hover effect with black border, background color change, and other effects */
+  .optimize-btn:hover {
+    transform: scale(1.05); /* Slight scale for a "pop" effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border: 4px solid black; /* Change border color to black on hover */
+  }
+  
+  /* "Trending" hover effect: add underline and increase font size slightly */
+  .optimize-btn:hover span {
+    
+    font-size: 1.35rem; /* Slight increase in font size for emphasis */
+  }
+  
+  .optimize-btn span {
+    padding-left: 10px;
+    font-size: 1.25rem;
+    transition: all 0.3s ease; /* Smooth transition for span text */
+  }
+  
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between gauges */
+    align-items: center; /* Center content horizontally */
+    height: 93%; /* Full height of the top-section */
+    box-sizing: border-box; /* Ensures padding doesn't exceed allocated space */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e0e0e0; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card effect */
+    padding: 20px; /* Space inside the card */
+    margin: 10px; /* Space outside the card */
+    width: 500px; /* Ensures it fits its parent container */
+    box-sizing: border-box; /* Includes padding and border in width/height calculations */
+    margin-left: 100px;
+  }
+  
+  /* Gauge Containers */
+  .gauge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 100%; /* Full width of its parent container */
+    box-sizing: border-box;
+  }
+  
+  /* Individual Gauge Divs */
+  .one,
+  .two,
+  .three {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1; /* Allows equal height distribution inside the right container */
+    max-height: 80px; /* Ensures compact layout */
+    width: 100%; /* Matches the width of the right container */
+    margin: 5px; /* Adds gap between the gauge containers */
+    background-color: #feefef; /* White background */
+    border: 1px solid #e0e0e0; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card effect */
+    padding: 20px; /* Space inside the card */
+    box-sizing: border-box; /* Includes padding and border in width/height calculations */
+  }
+  
+  /* Gauge Label */
+  .gauge-label {
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: #842020;
+    font-style: bold;
+    font-weight:bold;
+    
+  }
+  
+  #uts-gauge,#conductivity-gauge,#elongation-gauge {
+    padding-top: 45px;
+    
+  }
+  
+  #uts-gauge{
+    padding-right: 25px;
+  }
+  
+  .bottom-section{
+    margin-left:60px
+  }
+  .data-table-container {
+    height:280px;
+    width: 1200px;
+    overflow-x: auto;
+    overflow-x: auto;
+    margin-top:-10px;
+
+  }
+  
+  .data-table {
+    width: 80%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 20px 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .data-table th, .data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  .data-table th {
+    position: sticky;
+    top: 0; /* Makes the header stick to the top of the container */
+     background-color: #feefef; /* Set background color for the header */
+    z-index: 1; /* Ensure the header stays on top of the content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .data-table {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .data-table {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .data-table {
+      font-size: 10px;
+    }
+  }

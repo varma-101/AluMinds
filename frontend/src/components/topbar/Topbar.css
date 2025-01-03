@@ -1,0 +1,29 @@
+.topbar {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    display: flex; /* Align children side by side */
+    align-items: center; /* Vertically center the elements */
+    justify-content: center; /* Center all items horizontally */
+    position: relative; /* Enable precise positioning of children */
+}
+
+.img-span {
+    position: absolute; /* Keep the logo and span to the left */
+    left: 0; /* Align to the left edge of the top bar */
+    display: flex;
+    flex-direction: column; /* Keep logo and text stacked */
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+span {
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+}
+
+.topbar .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #912e2e;
+    text-align: center;
+}

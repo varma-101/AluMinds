@@ -1,0 +1,111 @@
+/* General body and container styling */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrollbars */
+}
+
+.login-container {
+  background-image: linear-gradient(rgba(169, 169, 169, 0.6), rgba(169, 169, 169, 0.6)), 
+    url('bg.jpg');
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents repetition */
+  height: 100vh; /* Full height of the viewport */
+  width: 100%; /* Full width of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo container styling */
+.logo-container {
+  position: absolute;
+  top: 10px; /* Distance from the top of the screen */
+  left: 10px; /* Distance from the left of the screen */
+  margin: 10px;
+}
+
+.logo {
+  width: 350px; /* Adjust size of the logo */
+  height: auto;
+}
+
+/* Login box styling */
+.login-box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  text-align: center;
+  width: 350px;
+  height: auto; /* Adjust height dynamically */
+}
+
+/* Title styling */
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input field styling */
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f1f1f1; /* Light silver background */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.login-input::placeholder {
+  font-weight: bold;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #c44536;
+  box-shadow: 0 0 5px rgba(196, 69, 54, 0.5);
+}
+
+/* Login button styling */
+.login-button {
+  margin-top: 25px;
+  width: 245px; /* Full-width button */
+  padding: 10px;
+  background-color: #901b1b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #a33328;
+}
+
+.login-button:focus {
+  outline: none;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-box {
+    width: 90%; /* Adjust login box width for smaller screens */
+  }
+}

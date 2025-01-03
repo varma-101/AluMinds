@@ -1,0 +1,68 @@
+.predict-optimize-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin: 0 70px;
+    width: 40%;
+  }
+  
+  .predict-button {
+    background-color: #114b43;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+            
+  }
+  
+  .feedback-box {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 10px 35px 10px 35px;
+    border-radius: 10px;
+    text-align: center;
+    width: 15rem;
+    width: 400px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feedback-title {
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px
+  }
+  
+  .feedback-text {
+    padding:10px;
+    margin-top: 6px;
+    background-color: #f6d4d0;
+    font-size: 15px;
+    font-weight: 18px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .optimize-button {
+    background-color: #9e1b1b;
+    color: white;
+    padding: 10px 20px ; 
+    margin-left: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+
+
+  .feedback-text p {
+    margin: 1px; /* Remove default margin */
+    padding: 2px 0px 0px 0px; /* Optional: adjust if you need space inside the <p> tags */
+     /* Ensure feedback is inline */
+  }
