@@ -5,8 +5,6 @@ exports.makePrediction = async (req, res) => {
   const { parameters, chemicalComposition } = req.body;
 
   try {
-  
-    
     const response = await axios.post("http://localhost:3000/predict", {  parameters,
       chemicalComposition });
     const outputs = response.data;
